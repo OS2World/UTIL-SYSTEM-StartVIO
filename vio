@@ -1,0 +1,4 @@
+vio.exe: vio.obj
+                 link386 /a:2 /e:2 /f /packd /nol /pm:vio /m $*,,,,nul.def
+vio.obj: vio.c
+                 icc /C /Ss /O+ /Rn /Q+ $<
